@@ -18,6 +18,8 @@
 		91F7F005177911AA00758C43 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91F7F004177911AA00758C43 /* Default-568h@2x.png */; };
 		91F7F008177911AA00758C43 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F7F006177911AA00758C43 /* MainStoryboard.storyboard */; };
 		91F7F00B177911AA00758C43 /* sotabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F7F00A177911AA00758C43 /* sotabViewController.m */; };
+		91F7F0121779152300758C43 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F7F0111779152300758C43 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		91F7F0141779152C00758C43 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F7F0131779152C00758C43 /* Twitter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		91F7F007177911AA00758C43 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		91F7F009177911AA00758C43 /* sotabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sotabViewController.h; sourceTree = "<group>"; };
 		91F7F00A177911AA00758C43 /* sotabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sotabViewController.m; sourceTree = "<group>"; };
+		91F7F0111779152300758C43 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		91F7F0131779152C00758C43 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91F7F0141779152C00758C43 /* Twitter.framework in Frameworks */,
+				91F7F0121779152300758C43 /* Social.framework in Frameworks */,
 				91F7EFEF177911AA00758C43 /* UIKit.framework in Frameworks */,
 				91F7EFF1177911AA00758C43 /* Foundation.framework in Frameworks */,
 				91F7EFF3177911AA00758C43 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +79,8 @@
 		91F7EFED177911AA00758C43 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				91F7F0111779152300758C43 /* Social.framework */,
+				91F7F0131779152C00758C43 /* Twitter.framework */,
 				91F7EFEE177911AA00758C43 /* UIKit.framework */,
 				91F7EFF0177911AA00758C43 /* Foundation.framework */,
 				91F7EFF2177911AA00758C43 /* CoreGraphics.framework */,
@@ -264,6 +272,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Social TabBar/Social TabBar-Prefix.pch";
 				INFOPLIST_FILE = "Social TabBar/Social TabBar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -275,6 +284,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Social TabBar/Social TabBar-Prefix.pch";
 				INFOPLIST_FILE = "Social TabBar/Social TabBar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Social/Social.h>
+#import <Twitter/Twitter.h>
 
-@interface sotabViewController : UIViewController
+@interface sotabViewController : UIViewController <UITextFieldDelegate>
+
+@property (weak, nonatomic) IBOutlet UITextField *post;
 
 @end
